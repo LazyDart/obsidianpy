@@ -1,5 +1,8 @@
 # ObsidianPy - Python Package for Complex Operations on Obsidian Vault
 
+**Project is in development stage**
+Write to me for feature requests.
+
 ```
 obsidianpy/
 ├── docs
