@@ -15,6 +15,8 @@ class Note(ObsidianObject):
             content: str
         ):
 
+        # TODO All attributes should be protected or private.
+
         self.title = title
         self.relative_path = relative_path
         self._last_modification_date = modification_date
@@ -23,6 +25,9 @@ class Note(ObsidianObject):
 
     @classmethod
     def from_filepath(cls, file_path: str):
+        if not path.exists(file_path):
+            raise FileNotFoundError(f"File {file_path} not found. .from_filepath(file_path) requires existing note file.")
+
         extension = path.splitext(file_path)[1]
         
         title = path.basename(file_path)[:-(len(extension))]
