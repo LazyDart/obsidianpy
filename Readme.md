@@ -20,7 +20,15 @@ obsidianpy/
 ```
 
 ## TODO
-- Add note constructor from filepath (if exists)
+- Add ruff or other style handling tools.
+- Note attributes should be protected or private.
 - Define Note Contents interface and class
 - Suppose note contents include links, how to construct networkx graph based on those (and hashes).
 - Add more todos
+
+## Instalation
+Navigate to cloned repo and run:
+```
+pip install -r requirements.txt
+pip install -e .
+```
