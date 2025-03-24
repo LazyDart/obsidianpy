@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "obsidianpy"
+version = "0.1.0"
+description = "A Python interface for interacting with Obsidian.md vaults."
+readme = "Readme.md"
+requires-python = ">=3.9"
+authors = [
+    { name="Lazy Dart", email="miltkacz@gmail.com" }
+]
+license = { text = "MIT" }
+
+# Use this only if you want to declare runtime deps here
+# But if you're keeping requirements.txt, leave this empty for now
+dependencies = []
+
+[tool.setuptools]
+packages = ["obsidianpy"]
+
+[tool.setuptools.package-data]
+# Add non-.py files if needed (e.g., markdown templates, config, etc.)
+"obsidianpy" = ["py.typed"]
