@@ -6,12 +6,7 @@ class ContentsObject(Protocol):
     
     content: str
 
-    @property
-    def content(self) -> str:
-        ...
-
-    def get_hash(self) -> str:
-        ...
+    
 
 
 class ObsidianObject(Protocol):
