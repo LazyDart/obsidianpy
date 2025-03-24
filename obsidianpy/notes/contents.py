@@ -1,4 +1,4 @@
-from obsidian_package.core.interfaces import ContentsObject
+from obsidianpy.core.interfaces import ContentsObject
 
 # TODO Obviosuly
 class NoteContent(ContentsObject):
