@@ -1,11 +1,22 @@
-# Python Package for Complex Operations on Obsidian Vault
+# ObsidianPy - Python Package for Complex Operations on Obsidian Vault
 
 ```
-obsidian_package/
-├── docs/
+obsidianpy/
+├── docs
+│   └── overview.md
+├── obsidianpy
+│   ├── core
+│   │   ├── hash_func.py
+│   │   ├── __init__.py
+│   │   └── interfaces.py
+│   ├── graph
+│   │   └── __init__.py
+│   └── notes
+│       ├── contents.py
+│       ├── __init__.py
+│       └── note.py
 ├── Readme.md
-├── src/
-└── tests/
+└── tests
 ```
 
 ## TODO
