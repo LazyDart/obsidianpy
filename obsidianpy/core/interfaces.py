@@ -36,7 +36,9 @@ class ObsidianLink(Protocol):
 # TODO: This is placeholder
 class ContentsObject(Protocol):
     
-    content: str
+    content: str # TODO There might be image-contents, other document type contents etc. So Content is a protocol with undefined content variable type.
+    # TODO Methods below seem to be centered around an idea of a text-based content object. Need to change that so Protocol will no longer be bound to strings... 
+
     links: list[str] 
 
     def get_content(self) -> str:
@@ -104,4 +106,11 @@ class ObsidianObject(Protocol):
         ...
 
     def __str__(self) -> str:
+        ...
+
+
+class QueryableObject(Protocol):
+    title_to_hash: dict[str, str]
+
+    def get_hash_of(self, title) -> str:
         ...
