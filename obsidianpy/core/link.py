@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from interfaces import QueryableObject
+from .interfaces import QueryableObject
 
 class Link(ABC):
     

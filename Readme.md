@@ -32,7 +32,8 @@ Contents is Protocol, as there are contents which are images/documents and conte
 
 ### Important
 - Define TextContents ABC methods (not abstract, I think).
-- Define Note Contents class
+- Define Note Contents extract links method.
+- Finish Definition of Note Contents class
 - Multiple links linking to the same file might be possible. Should we store them separately or not?
     - It's either separate links that must be updated individually 
     - or a one link with multiple positions.

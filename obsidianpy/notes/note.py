@@ -1,12 +1,16 @@
 from datetime import datetime
 from os import path
 
-from obsidianpy.notes.contents import NoteContent
+from obsidianpy.notes.contents import NoteContents
 from obsidianpy.core.interfaces import ObsidianObject
 from obsidianpy.core.hash_func import obsidian_note_hash
 
 
 class Note(ObsidianObject):
+    """
+    This class implements a default markdown obsidian note.
+    """
+    
     def __init__(
             self, 
             title: str, 
@@ -20,7 +24,7 @@ class Note(ObsidianObject):
         self.title = title
         self.relative_path = relative_path
         self._last_modification_date = modification_date
-        self.content = NoteContent(content)
+        self.content = NoteContents(content)
         self.__hash_val = obsidian_note_hash(relative_path, modification_date)
 
     @classmethod

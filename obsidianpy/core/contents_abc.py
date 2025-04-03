@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
-from interfaces import ContentsObject
-from link import Link
+from .interfaces import ContentsObject
+from .link import Link
 
 class TextContents(ABC, ContentsObject):
 
