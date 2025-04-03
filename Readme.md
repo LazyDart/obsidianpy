@@ -7,19 +7,30 @@ Write to me for feature requests.
 obsidianpy/
 ├── docs
 │   └── overview.md
+├── .gitignore
 ├── obsidianpy
 │   ├── core
+│   │   ├── contents_abc.py
 │   │   ├── hash_func.py
 │   │   ├── __init__.py
-│   │   └── interfaces.py
+│   │   ├── interfaces.py
+│   │   └── link.py
 │   ├── graph
 │   │   └── __init__.py
+│   ├── __init__.py
 │   └── notes
 │       ├── contents.py
 │       ├── __init__.py
 │       └── note.py
+├── pyproject.toml
 ├── Readme.md
+├── requirements.txt
 └── tests
+    ├── test_data
+    │   └── notes
+    │       ├── long_note.md
+    │       └── short_note.md
+    └── test_note.py
 ```
 
 Decisions:
