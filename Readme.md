@@ -29,13 +29,21 @@ Contents is Protocol, as there are contents which are images/documents and conte
 
 
 ## TODO
-- Must decide whether OBSIDIAN OBJECT should be interface or abstract class.
-- Add ruff or other style handling tools.
+
+### Important
+- Define TextContents ABC methods (not abstract, I think).
+- Define Note Contents class
+- Multiple links linking to the same file might be possible. Should we store them separately or not?
+    - It's either separate links that must be updated individually 
+    - or a one link with multiple positions.
 - Note attributes should be protected or private.
-- Define Note Contents interface and class
 - Add obsidian link scanning as a Note Contents method.
 - Suppose note contents include links, how to construct networkx graph based on those (and hashes).
-- Add more todos
+
+### Less Important
+- Add ruff or other style handling tools.
+- Implement binary contents abstract class and their children.
+- encodings must be considered at some points
 
 ## Instalation
 Navigate to cloned repo and run:

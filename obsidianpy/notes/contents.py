@@ -1,6 +1,4 @@
-from obsidianpy.core.interfaces import ContentsObject
+from obsidianpy.core.contents_abc import TextContents
 
 # TODO Obviosuly
-class NoteContent(ContentsObject):
-    def __init__(self, content: str):
-        self.content = content
+class NoteContents(TextContents):
